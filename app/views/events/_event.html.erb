@@ -5,7 +5,7 @@
     <% end %>
     <div class="card-body">
       <h4 class="card-title fw-bold">
-        <%= link_to event.title, event_path(event)  %>
+        <%= link_to event.decorate.only_woman_check, event_path(event)  %>
       </h4>
       <p class="card-text"><%= event.content %></p>
       <hr />
