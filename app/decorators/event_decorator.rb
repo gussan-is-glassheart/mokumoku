@@ -8,6 +8,6 @@ class EventDecorator < Draper::Decorator
   end
 
   def only_woman_check
-    object.only_woman == true ? "【女性限定】#{object.title}" : "#{object.title}"
+    object.only_woman == true ? "【女性限定】#{object.title}" : object.title.to_s
   end
 end
